@@ -31,3 +31,24 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+ul {
+    list-style: none;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-column {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}

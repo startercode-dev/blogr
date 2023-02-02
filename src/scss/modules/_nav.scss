@@ -1,0 +1,54 @@
+@use '../helper/' as *;
+
+.nav,
+.mobile-nav {
+    width: min(80%, 1440px);
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: $space-l 0;
+    font-family: $ubuntu;
+
+    a {
+        color: $text-white;
+    }
+
+    &_wrapper {
+        grid-auto-flow: column;
+        align-items: center;
+        gap: $space-l;
+    }
+
+    .menu_wrapper {
+        gap: $space-s;
+    }
+
+    .dropdown {
+        font-size: $step--2;
+        align-items: center;
+        gap: $space-2xs;
+    }
+
+    .dropdown-content {
+        gap: $space-s;
+    }
+
+    .auth {
+        font-size: $step--2;
+        gap: $space-2xs;
+
+        a {
+            padding: $space-2xs $space-m;
+        }
+    }
+}
+
+@media (width <= 56rem) {
+    .nav {
+        display: none !important;
+    }
+
+    .mobile-nav {
+        display: flex !important;
+    }
+}
