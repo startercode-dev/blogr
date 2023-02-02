@@ -1,0 +1,48 @@
+@use '../helper/' as *;
+
+.section1 {
+    margin: $space-3xl 0;
+    // gap: $space-s;
+    justify-content: center;
+
+    h2 {
+        font-family: $overpass;
+        font-size: $step-2;
+        font-weight: 600;
+
+        justify-self: center;
+    }
+
+    h3 {
+        font-size: $step-0;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .wrapper {
+        max-width: 1920px;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .description-container {
+        gap: $space-2xl;
+    }
+
+    .description {
+        font-family: $overpass;
+        font-size: $step--2;
+        font-weight: 300;
+
+        width: 70%;
+        margin-inline: auto;
+        gap: $space-s;
+
+        line-height: 2;
+        letter-spacing: 0.8;
+    }
+
+    .img {
+        transform: scale(1.25) translate(18%);
+    }
+}
