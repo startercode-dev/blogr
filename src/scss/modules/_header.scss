@@ -55,4 +55,16 @@ header {
         border-radius: 10rem;
         box-shadow: 0px 0px 0px 1px $text-white;
     }
+
+    .cta-learn:hover {
+        background-color: $text-white;
+        color: $text-red;
+    }
+}
+
+header {
+    .btn--white:hover {
+        background-color: $text-light-red;
+        color: $text-white !important;
+    }
 }

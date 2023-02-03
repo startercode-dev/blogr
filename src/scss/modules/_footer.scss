@@ -28,4 +28,8 @@ footer {
     .nav-list {
         gap: $space-xs;
     }
+
+    a:hover {
+        border-bottom: 1px solid $text-white;
+    }
 }

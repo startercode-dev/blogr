@@ -27,10 +27,35 @@
         font-size: $step--2;
         align-items: center;
         gap: $space-2xs;
+
+        position: relative;
+
+        a:hover {
+            box-shadow: 0 1px $text-white;
+        }
     }
 
     .dropdown-content {
+        background-color: $text-white;
+        padding: $space-s $space-s;
+        padding-right: $space-l;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 20px 0 #88888887;
+        width: 16rem;
         gap: $space-s;
+
+        position: absolute;
+        top: 250%;
+        left: -25%;
+
+        a {
+            color: $text-dark-grey;
+        }
+
+        a:hover {
+            color: $text-dark;
+            font-weight: 500;
+        }
     }
 
     .auth {
