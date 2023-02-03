@@ -1,11 +1,9 @@
 @use '../helper/' as *;
 
-.section1 {
+.section3 {
     margin: $space-3xl 0;
     gap: $space-2xs;
     justify-content: center;
-
-    // overflow-x: hidden;
 
     h2,
     h3 {
@@ -26,7 +24,7 @@
         line-height: 1;
     }
 
-    .section1-wrapper {
+    .section3-wrapper {
         width: min(80%, 1440px);
         margin-inline: auto;
         align-items: center;
@@ -44,14 +42,13 @@
         color: $text-dark-grey;
 
         width: 90%;
-        // margin-inline: auto;
         gap: $space-s;
 
         line-height: 2;
         letter-spacing: 0.8;
     }
 
-    .img1 {
-        transform: scale(1.5) translate(28%);
+    .img3 {
+        transform: scale(1.5) translate(-28.5%);
     }
 }

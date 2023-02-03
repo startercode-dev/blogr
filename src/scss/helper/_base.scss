@@ -17,6 +17,8 @@ html {
 body {
     min-height: 100%;
     font-weight: 400;
+
+    overflow-x: hidden;
 }
 
 img,
@@ -47,6 +49,11 @@ ul {
 
 .flex {
     display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 .hidden {

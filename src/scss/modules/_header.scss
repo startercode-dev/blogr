@@ -13,11 +13,11 @@ header {
 
 .bg-img {
     background-image: url('../img/images/bg-pattern-intro-desktop.svg');
-    background-position: 25% 50%;
+    background-position: 15% 50%;
 
     @media (width <= 56rem) {
         background-image: url('../img/images/bg-pattern-intro-mobile.svg');
-        background-position: 40% 35%;
+        background-position: 35% 29%;
     }
 }
 

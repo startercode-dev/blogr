@@ -1,0 +1,31 @@
+@use '../helper/' as *;
+
+footer {
+    background-color: $text-dark;
+    margin: $space-2xl 0 0;
+}
+
+.footer-container {
+    width: min(80%, 1440px);
+    margin-inline: auto;
+
+    padding: $space-xl 0;
+
+    .footer-nav {
+        color: $text-white;
+        font-family: $ubuntu;
+        font-size: $step--2;
+        line-height: 1;
+        letter-spacing: 1;
+
+        gap: $space-m;
+
+        a {
+            color: $text-grey;
+        }
+    }
+
+    .nav-list {
+        gap: $space-xs;
+    }
+}

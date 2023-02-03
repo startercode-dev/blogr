@@ -1,0 +1,64 @@
+@use '../helper/' as *;
+
+.section2 {
+    background: linear-gradient(
+        90deg,
+        hsl(237, 17%, 21%),
+        hsl(237, 23%, 32%) 70%
+    );
+    border-radius: 0 10rem;
+
+    margin: $space-2xl 0;
+    color: $text-white;
+
+    .bg-img2 {
+        background-image: url('../img/images/bg-pattern-circles.svg');
+        background-repeat: no-repeat;
+        background-position: -20rem 80%;
+        border-radius: 0 10rem;
+
+        height: 35rem;
+    }
+
+    &-container {
+        grid-auto-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+
+        width: min(80%, 1440px);
+        margin-inline: auto;
+
+        height: 100%;
+    }
+
+    .section2-text {
+        font-family: $overpass;
+
+        padding: $space-2xl 0;
+        gap: $space-s;
+        line-height: 1;
+    }
+
+    h3 {
+        font-size: $step-2;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: $step--2;
+        width: 80%;
+        line-height: 2;
+        letter-spacing: 0.8;
+    }
+
+    .img-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img2 {
+        position: absolute;
+        top: -28%;
+    }
+}
