@@ -11,13 +11,15 @@
     margin: $space-2xl 0;
     color: $text-white;
 
+    @media (width <= 56rem) {
+        margin: $space-3xl 0;
+    }
+
     .bg-img2 {
         background-image: url('../img/images/bg-pattern-circles.svg');
         background-repeat: no-repeat;
-        background-position: -20rem 80%;
+        background-position: -10rem 80%;
         border-radius: 0 10rem;
-
-        height: 35rem;
     }
 
     &-container {
@@ -28,7 +30,18 @@
         width: min(80%, 1440px);
         margin-inline: auto;
 
-        height: 100%;
+        @media (width <= 56rem) {
+            width: min(90%, 1440px);
+            grid-auto-flow: row;
+            grid-auto-rows: 1fr;
+        }
+
+        @media (width <= 43rem) {
+            grid-auto-rows: 1fr 1.5fr;
+        }
+        @media (width <= 32rem) {
+            grid-auto-rows: 1fr 2fr;
+        }
     }
 
     .section2-text {
@@ -37,16 +50,33 @@
         padding: $space-2xl 0;
         gap: $space-s;
         line-height: 1;
+
+        @media (width <= 86rem) {
+            padding: $space-xl 0;
+        }
+
+        @media (width <= 56rem) {
+            text-align: center;
+            gap: $space-xs;
+        }
     }
 
     h3 {
         font-size: $step-2;
         font-weight: 600;
+
+        @media (width <= 86rem) {
+            font-size: $step-1;
+        }
+
+        @media (width <= 56rem) {
+            font-size: $step-0;
+        }
     }
 
     p {
         font-size: $step--2;
-        width: 80%;
+
         line-height: 2;
         letter-spacing: 0.8;
     }
@@ -60,5 +90,32 @@
     .img2 {
         position: absolute;
         top: -28%;
+
+        @media (width <= 86rem) {
+            top: -15%;
+        }
+
+        @media (width <= 67rem) {
+            transform: scale(1.2);
+            left: -10%;
+            top: 0%;
+        }
+
+        @media (width <= 56rem) {
+            top: auto;
+            bottom: -10rem;
+            left: 50%;
+            transform: translate(-50%) scale(1);
+        }
+
+        @media (width <= 43rem) {
+            transform: translate(-50%) scale(0.8);
+            bottom: -12rem;
+        }
+
+        @media (width <= 32rem) {
+            transform: translate(-50%) scale(0.9);
+            bottom: -9rem;
+        }
     }
 }

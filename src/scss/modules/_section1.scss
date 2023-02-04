@@ -5,8 +5,6 @@
     gap: $space-2xs;
     justify-content: center;
 
-    // overflow-x: hidden;
-
     h2,
     h3 {
         color: $text-blue;
@@ -31,10 +29,30 @@
         margin-inline: auto;
         align-items: center;
         grid-template-columns: 1fr 1fr;
+
+        padding: $space-l 0 0;
+
+        @media (width <= 56rem) {
+            width: min(100%, 1440px);
+            grid-template-columns: 1fr;
+            justify-items: stretch;
+
+            gap: $space-l;
+        }
     }
 
     .description-container {
         gap: $space-2xl;
+
+        @media (width <= 56rem) {
+            h3,
+            p {
+                text-align: center;
+            }
+
+            justify-items: center;
+            gap: $space-l;
+        }
     }
 
     .description {
@@ -53,5 +71,19 @@
 
     .img1 {
         transform: scale(1.5) translate(28%);
+
+        @media (width <= 56rem) {
+            grid-row: 1/2;
+            transform: none;
+        }
+    }
+}
+
+@media (width <= 56rem) {
+    .img1.img1-desktop {
+        display: none;
+    }
+    .img1.img1-mobile {
+        display: block;
     }
 }
