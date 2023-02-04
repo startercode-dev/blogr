@@ -31,9 +31,9 @@
             <img class="logo" src="./src/img/images/logo.svg" alt="" />
             <ul class="menu_wrapper flex">
               <li class="dropdown grid-column">
-                <a href="#">Product</a>
+                <a href="#" data-nav="product">Product</a>
                 <img src="./src/img/images/icon-arrow-light.svg" alt="" />
-                <ul class="dropdown-content grid hidden">
+                <ul class="dropdown-content grid content-product hidden">
                   <li><a href="#">Overview</a></li>
                   <li><a href="#">Pricing</a></li>
                   <li><a href="#">Marketplace</a></li>
@@ -42,9 +42,9 @@
                 </ul>
               </li>
               <li class="dropdown grid-column">
-                <a href="#">Company</a>
+                <a href="#" data-nav="company">Company</a>
                 <img src="./src/img/images/icon-arrow-light.svg" alt="" />
-                <ul class="dropdown-content grid hidden">
+                <ul class="dropdown-content grid content-company hidden">
                   <li><a href="#">About</a></li>
                   <li><a href="#">Team</a></li>
                   <li><a href="#">Blog</a></li>
@@ -52,9 +52,9 @@
                 </ul>
               </li>
               <li class="dropdown grid-column">
-                <a href="#">Connect</a>
+                <a href="#" data-nav="connect">Connect</a>
                 <img src="./src/img/images/icon-arrow-light.svg" alt="" />
-                <ul class="dropdown-content grid hidden">
+                <ul class="dropdown-content grid content-connect hidden">
                   <li><a href="#">Contact</a></li>
                   <li><a href="#">Newsletter</a></li>
                   <li><a href="#">LinkedIn</a></li>
@@ -75,13 +75,22 @@
             src="src/img/images/icon-hamburger.svg"
             alt=""
           />
+          <img
+            class="icon-close hidden"
+            src="src/img/images/icon-close.svg"
+            alt=""
+          />
           <ul class="menu_wrapper grid hidden">
             <li class="dropdown grid">
               <div class="dropdown-wrapper grid-column">
-                <a href="#">Product</a>
-                <img src="./src/img/images/icon-arrow-dark.svg" alt="" />
+                <a href="#" data-nav="product">Product</a>
+                <img
+                  class="mobile-arrow-product"
+                  src="./src/img/images/icon-arrow-dark.svg"
+                  alt=""
+                />
               </div>
-              <ul class="dropdown-content-mobile grid hidden">
+              <ul class="dropdown-content-mobile grid mobile-product hidden">
                 <li><a href="#">Overview</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Marketplace</a></li>
@@ -91,10 +100,14 @@
             </li>
             <li class="dropdown grid">
               <div class="dropdown-wrapper grid-column">
-                <a href="#">Company</a>
-                <img src="./src/img/images/icon-arrow-dark.svg" alt="" />
+                <a href="#" data-nav="company">Company</a>
+                <img
+                  class="mobile-arrow-company"
+                  src="./src/img/images/icon-arrow-dark.svg"
+                  alt=""
+                />
               </div>
-              <ul class="dropdown-content-mobile grid hidden">
+              <ul class="dropdown-content-mobile grid mobile-company hidden">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Blog</a></li>
@@ -103,10 +116,14 @@
             </li>
             <li class="dropdown grid">
               <div class="dropdown-wrapper grid-column">
-                <a href="#">Connect</a>
-                <img src="./src/img/images/icon-arrow-dark.svg" alt="" />
+                <a href="#" data-nav="connect">Connect</a>
+                <img
+                  class="mobile-arrow-connect"
+                  src="./src/img/images/icon-arrow-dark.svg"
+                  alt=""
+                />
               </div>
-              <ul class="dropdown-content-mobile grid hidden">
+              <ul class="dropdown-content-mobile grid mobile-connect hidden">
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Newsletter</a></li>
                 <li><a href="#">LinkedIn</a></li>
@@ -126,7 +143,7 @@
           <p>Grow your audience and build your online brand</p>
           <div class="cta-container">
             <a href="#" class="btn btn--white cta-start">Start for Free</a>
-            <a href="#" class="btn cta-learn">Learn More</a>
+            <a href="#section1" class="btn cta-learn">Learn More</a>
           </div>
         </div>
       </div>
@@ -134,7 +151,7 @@
 
     <!-- * MAIN -->
     <main class="grid">
-      <section class="section1 grid">
+      <section class="section1 grid" id="section1">
         <h2 class="section1-title">Designed for the future</h2>
         <div class="section1-wrapper grid">
           <div class="description-container grid">
